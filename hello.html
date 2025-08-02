@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Comparison</title>
+  <style>
+    .comparison-table {
+      width: 90%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    .comparison-table th, .comparison-table td {
+      border-bottom: 1px solid #ccc;
+      padding: 15px;
+      padding-left: 0%;
+    }
+
+    /* Highlight column */
+    .highlight {
+      background-color: #256BAE;
+      color: white;
+      position: relative;
+      border: none !important;
+    }
+
+    /* Remove internal borders for center column cells */
+    .highlight-cell {
+      width: 10em;
+      background-color: #256BAE;
+      color: white;
+      border: none !important; 
+    }
+
+    .highlight .circle-wrapper {
+      position: absolute;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      border-radius: 50%;
+      border: 6px solid #256BAE;
+      padding: 8px;
+      width: 90px;
+      height: 90px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .highlight .circle-wrapper img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .product-image {
+      width: 60px;
+    }
+
+    .tick {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .cross {
+      color: black;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .row-label {
+      text-align: left;
+      font-weight: bold;
+      width: 35%;
+    }
+
+    thead th {
+      position: relative;
+    }
+    .no{
+      border-bottom: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<table class="comparison-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="highlight">
+        <div class="circle-wrapper">
+          <img src="asset/Link → logo.png.svg" alt="Center Product">
+        </div>
+        $199
+      </th>
+      <th>
+        <img src="asset/Link → logo.png.svg" alt="Product 2" class="product-image"><br>
+        under $100
+      </th>
+      <th>
+        <img src="asset/Link → logo.png.svg" alt="Product 3" class="product-image"><br>
+        $500+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Restore Natural Spinal Alignment</td>
+      <td class="highlight-cell tick">✓</td>
+      <td class="cross">✕</td>
+      <td class="cross">✕</td>
+    </tr>
+    <tr>
+      <td class="row-label">Zero Installation</td>
+      <td class="highlight-cell tick">✓</td>
+      <td class="cross">✕</td>
+      <td class="cross">✕</td>
+    </tr>
+    <tr>
+      <td class="row-label">Personalized Settings</td>
+      <td class="highlight-cell tick">✓</td>
+      <td class="cross">✕</td>
+      <td class="cross">✕</td>
+    </tr>
+    <tr>
+      <td class="row-label">Heat Therapy</td>
+      <td class="highlight-cell tick">✓</td>
+      <td class="cross">✕</td>
+      <td class="cross">✕</td>
+    </tr>
+    <tr>
+      <td class="row-label">EMS Therapy for Targeted Relief</td>
+      <td class="highlight-cell tick">✓</td>
+      <td class="cross">✕</td>
+      <td class="cross">✕</td>
+    </tr>
+    <tr>
+      <td class="row-label no">Lifetime Warranty</td>
+      <td class="highlight-cell tick no">✓</td>
+      <td class="cross no">✕</td>
+      <td class="cross no">✕</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
