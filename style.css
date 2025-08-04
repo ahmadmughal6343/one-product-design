@@ -1522,7 +1522,7 @@ fieldset input {
     }
 }
 
-@media (min-width: 480px) and (max-width:800px){
+@media (min-width: 480px) and (max-width:850px){
       .gift {
         width: 100vw;
         height: 44px;
