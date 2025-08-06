@@ -10,6 +10,8 @@
 }
 
 .gift {
+    position: absolute;
+    z-index: 2;
     width: 100%;
     height: 44px;
     color: #ffffff;
@@ -21,20 +23,17 @@
     text-align: center;
 }
 
-.fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    border-bottom: 1px solid #00000033;
-}
-
 li {
     list-style: none;
 }
 
 nav {
+      position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #00000033;
     width: 100%;
-    height: 130px;
+    height: 165px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -64,7 +63,7 @@ nav a {
 
 header {
     position: relative;
-    top: 11em;
+    top: 10em;
     width: 100%;
     margin-bottom: 5%;
     padding-top: 3%;
@@ -459,6 +458,7 @@ hr {
 .product-detail {
     background-color: #EDF2F4;
     padding: 65px 1px;
+    overflow-x: hidden;
 }
 
 .detail {
@@ -1042,7 +1042,6 @@ fieldset input {
 
     .gift {
         width: 100vw;
-        height: 44px;
         font-weight: 300;
         font-size: 10px;
     }
@@ -1053,12 +1052,13 @@ fieldset input {
 
     nav {
         width: 100vw;
-        flex-direction: column;
-        position: relative;
+        height: 130px;
+        justify-content: space-around;
+        
     }
 
     nav ul {
-        gap: 20px;
+        gap: 15px;
     }
 
     nav a {
@@ -1067,13 +1067,10 @@ fieldset input {
 
     nav .nav+img {
         width: 24px;
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
     }
 
     .nav img {
-        width: 100px;
+        width: 70px;
     }
 
     header .oon {
@@ -1098,6 +1095,7 @@ fieldset input {
     }
 
     header {
+        top: 8em;
         margin-bottom: 5%;
         padding-top: 3%;
         flex-direction: column;
@@ -1126,6 +1124,7 @@ fieldset input {
 
     .news-channel ul {
         gap: 20px;
+        top: 0;
         justify-content: center;
     }
 
@@ -1532,14 +1531,10 @@ fieldset input {
 .nav{
     gap: 50px;
 }
-    .fixed {
-        width: 100vw;
-    }
 
     nav {
         width: 100vw;
-        flex-direction: column;
-        position: relative;
+        height: 145px;
     }
 
     nav ul {
@@ -1552,9 +1547,6 @@ fieldset input {
 
     nav .nav+img {
         width: 24px;
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
     }
 
     .nav img {
@@ -1583,6 +1575,7 @@ fieldset input {
     }
 
     header {
+        top: 9em;
         margin-bottom: 5%;
         padding-top: 3%;
         flex-direction: column;
